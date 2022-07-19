@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,x,y,z,c;
+    cin >> t;
+	while(t--)
+	{
+	   cin >> x >> y >> z;
+	    c = (z*2)+x;
+	    if(c >= y)
+	      cout << "YES" << endl;
+	    else 
+	      cout << "NO" << endl;
+	}
+	return 0;
+}
