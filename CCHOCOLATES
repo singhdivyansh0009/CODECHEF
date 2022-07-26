@@ -4,17 +4,13 @@
 using namespace std;
 
 int main() {
-	int t,x,y,z,total,money_left;
+	int t,x,y,z;
 	cin >> t;
 	while(t--)
 	{
 	  cin >> x >> y >> z;
 	  total = x*5 + y*10;     // total money chef have
-	  money_left = total % z;    //money left by which chef can't be able to buy chocolates
-	  if(money_left == 0)
-	    cout << total/z << endl;  
-	  else
-	    cout << (total-money_left)/z << endl;
+	  cout << total/z << endl;
 	}
 	return 0;
 }
