@@ -1,0 +1,37 @@
+// https://www.codechef.com/submit/EZSPEAK
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	  int n , count=0 , i;
+	   string a;
+	    cin >> n;
+	    cin >> a;
+	    for( i=0; i<n ; i++)
+	    {
+	        switch(a[i])   //checking the each character of the word
+	        {
+	         case 'a':
+	         case 'e':
+	         case 'i':
+	         case 'o':
+	         case 'u': count=0; break; 
+	         default : count++;           // if character is consonant
+	        }
+	        if(count == 4)   // if no. of consonant became four we come out of the loop
+	           break;
+	    }
+	   if(i>=n)
+	   {
+	       cout << "YES" << endl;   // if we came out by failuer of looping condition
+	   }
+	   else 
+	       cout << "NO" << endl;   // if we came out by break statement 
+	}
+	return 0;
+}
