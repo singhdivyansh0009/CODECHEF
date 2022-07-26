@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int t,x,y,z;
+	int t,x,y,z,total;
 	cin >> t;
 	while(t--)
 	{
