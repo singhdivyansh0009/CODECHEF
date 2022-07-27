@@ -1,0 +1,18 @@
+//problem : https://www.codechef.com/submit/FRIMEET
+
+#include <iostream>
+using namespace std;
+
+int main() {
+     int t , x1 , x2;
+     cin >> t;
+     while (t--)
+     {
+         cin >> x1 >> x2;
+         if(x1<x2)
+           cout << "NO" << endl;
+         else 
+           cout << "YES" << endl;
+     }
+	return 0;
+}
