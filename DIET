@@ -18,8 +18,8 @@ int main() {
 	  }
 	   for(int i=0; i<n; i++)
 	   {
-	      a[i]+=extra;
-	      if(a[i]<k)
+	      a[i]+=extra;   //to add remaining protein of previous day
+	      if(a[i]<k)     //to check, is the protein enough as per diet
 	      {
 	         cout << "NO" << " " << i+1 << endl;
 	         flag = 1;
@@ -27,7 +27,7 @@ int main() {
 	      }
 	      else 
 	      {
-	       extra=a[i]-k;
+	       extra=a[i]-k;   // to get extra protein
 	      }
 	  }
 	  if(flag == 0)
